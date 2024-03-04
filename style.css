@@ -353,6 +353,15 @@ nav .icon i{
  .video-mout{
      width: 50%;
  }
+ .text{
+    color: #0a0a0a;
+text-align: center;
+font-family: Mulish;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 150% */
+ }
  
  video{
      width: 100%;
@@ -360,4 +369,92 @@ nav .icon i{
      border-radius: 10px;
  }
  
+
+ /* newsletter */
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+   
+}
+.newsletter .texts{
+    width: 43%;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 30px;
+}
+.newsletter .texts .form{
+    margin-top: 40px;
+    display: grid;
+    gap: 10px;
+}
+.newsletter .texts .form input{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+}
+.newsletter .img{
+    width: 55%;
+    position: relative;
+    top: 0;
+    right: 0;
+
+}
+.newsletter .image{
+    width: 100%;
+    
+}
+
+.coupon{
+    position: absolute;
+    right:8px;
+    bottom:50px;
+    text-align: center;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 30px 30px;
+    transform: rotate(-30deg);
+}
+
+
+/* footer */
+.foot-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+footer{
+    text-align: center;
+    height: 340px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+
+.client{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10%;
+    justify-content: center;
+}
+.rev{
+    background: rgba(245, 243, 241, 0.541);
+    text-align: center;
+    height: 200px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(128, 125, 125, 0.068);
+}
+
+.rev img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
