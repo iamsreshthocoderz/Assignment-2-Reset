@@ -117,11 +117,18 @@ nav .icon i{
     font-size: 40px;
     font-weight: 800;
 }
-.context p,.context li{
+
+.context  li{
     padding-top : 30px ;
     color: var(--p-color);
     font-size: 16px;
     font-weight: 400;
+    color: #131318;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; 
 }
 .context .btn1{
     color: var(--text-color);
@@ -289,16 +296,24 @@ nav .icon i{
     flex-wrap: wrap;
     gap: 20px;
      justify-content: center;
+     
  }
+
  .card h1{
      font-size: 24px;
      font-weight: 800;
      padding: 20px 0;
  }
  .card p{
-     font-size: 12px;
+     font-size: 16px;
      font-weight: 400;
      color: var(--p-color);
+     color: #5A5A5D;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
  
  }
  
@@ -458,3 +473,187 @@ footer{
     border-radius: 50%;
 }
 
+
+
+/* responsive */
+
+@media screen and (max-width:1024px) {
+    nav ul li a{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .logo h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .context{
+        width: 100%;
+    }
+    .popular{
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+    .popular .img-mout{
+        width: 100%;
+    }
+    .gridd .flex1,.gridd .flex2,.gridd .flex3{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+   .flex1 .maldiv,.flex1 .indo,.flex2 .srilaka,.flex2 .north,.flex2 .kasmir,.flex3 .bangla,.flex3 .bandar{
+        height: 176px;
+        padding: 80px;
+        font-size: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+    .video-mout{
+        width: 100%;
+    }
+
+    .newsletter{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .newsletter .texts, .newsletter .img{
+        width: 100%;
+    }
+    .coupon h3{
+        font-size: 12px;
+    }
+    .coupon h1{
+        font-size: 16px;
+    }
+
+}
+
+/* responsive  for tab */
+
+
+
+
+@media screen and (max-width:600px) {
+    nav ul{
+        position: fixed;
+        top:80px;
+        right:-100% ;
+        background: rgb(225, 214, 214);
+        height: 50vh;
+        display: block;
+        width: 30%;
+        text-align: left;
+        padding: 20px;
+        box-shadow: -5px 10px  rgba(247, 243, 243, 0.45);
+        transition: all ease-in-out .3s;
+    }
+    nav li{padding-bottom: 20px;}
+    nav .icon i{
+        display: block;
+    }
+    #click:checked ~ ul{
+        right: 0;
+    }
+
+    .banner h1{
+        padding-top:20% ;
+        font-size: 1.8rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+    .banner p{
+        color:rgba(242, 236, 236, 0.826);
+        font-size: 10px;
+        padding-top: 14px;
+    }
+    .banner .search{
+        display:flex;
+        flex-direction: column;
+        width: 200px;
+        margin: 0 auto;
+        row-gap: 15px;
+        margin-top: 20px;
+        padding: 8px;
+    }
+    .search>div{
+        background-color: var(--text-color);
+        color: var(--p-color);
+        display: flex;
+        align-items: center;
+        width:150px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .popular{
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+    .popular .img-mout{
+        width: 100%;
+    }
+    .context{
+        width: 100%;
+    }
+    .context h1{
+        font-size:33px;
+    }
+    .location h1{
+        font-size: 22px;
+    }
+    .location p{
+        font-size: 12px;
+    }
+
+     .gridd .flex1,.gridd .flex2,.gridd .flex3{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+   .flex1 .maldiv,.flex1 .indo,.flex2 .srilaka,.flex2 .north,.flex2 .kasmir,.flex3 .bangla,.flex3 .bandar{
+        height: 176px;
+        padding: 80px;
+        font-size: 20px;
+    }
+     .box h1{
+        font-size: 18px;
+     }
+     .box h2{
+        font-size: 16px;
+     }
+     .box p{
+        font-size: 10px;
+     }
+     .box div{
+        padding:10px 5px;
+     }
+
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .video-mout{
+        width: 100%;
+    }
+
+    .newsletter{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .newsletter .texts, .newsletter .img{
+        width: 100%;
+    }
+    .coupon h3{
+        font-size: 8px;
+    }
+    .coupon h1{
+        font-size: 12px;
+    }
+
+
+}
