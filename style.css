@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+}
+
+:root{
+    --main-color:rgb(255, 84, 0);
+    --text-color:rgb(255, 255, 255);
+    --p-color:rgba(19, 19, 24, 0.7);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo h1{
+    font-size: 36px;
+    font-weight: 800;
+}
+.logo span{
+    color: var(--main-color);
+}
+
+nav ul{
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(66, 66, 71);
+}
+nav ul li a.active{
+    color: var(--main-color);
+}
+nav ul li a:hover{
+    color: var(--main-color);
+}
+nav .icon i{
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+/* hero section */
+.hero{
+    width: 80%;
+    margin: auto;
+}
+
+.banner{
+    height:100vh;
+    background-size:cover;
+    border-radius: 10px;
+    padding: 0 10%;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(to bottom, rgba(7, 2, 17, 0.903),rgba(61, 53, 61, 0) 70%), url("Images/Group\ 13\ \(1\)\ \(1\).png");
+    text-align: center; 
+}
+.banner h1{
+    padding-top:18% ;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 800;
+}
+
+.banner p{
+    color:rgba(242, 236, 236, 0.826);
+    font-size: 16px;
+    padding-top: 20px;
+}
+.banner .search{
+    padding: 20px 20px;
+    background-color: rgba(214, 215, 215, 0.424);
+    border-radius: 5px;
+    margin-top: 50px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.banner .search input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.popular{
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.context{
+    width: 60%;
+}
+.context h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.context p,.context li{
+    padding-top : 30px ;
+    color: var(--p-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+.context .btn1{
+    color: var(--text-color);
+    font-weight: 700;
+    background: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.img-mout{
+    text-align: end;
+    width: 50%;
+}
+.img-mout img{
+    width: 100%;
+    
+}
+
+
+/* grid section */
+.location , .choose{
+    padding: 40px 10%;
+    text-align: center;
+}
+.location h1, .choose h1,.deals h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.location p, .deals p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p-color);
+    padding: 20px 10%;
+}
+.gridd .flex1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 15px;
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    
+}
+
+.flex1 .maldiv{
+    background: url("Images/Rectangle\ 5.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height:300px;
+    transition: all ease-in-out .6s;
+    
+}
+.flex1 .maldiv:hover{
+    transform: scale(1.06);
+}
+.flex1 .indo{
+    background: url("Images/Rectangle\ 8.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 300px;
+    transition: all ease-in-out .6s;
+}
+.flex1 .indo:hover{
+    transform: scale(1.06);
+}
+.gridd .flex2{
+
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+    color: var(--text-color);
+    grid-template-columns: 300px auto 230px;
+}
+.flex2 .srilaka{
+    background: url("Images/Rectangle\ 6.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height:300px;
+    transition: all ease-in-out .6s;
+}
+.flex2 .srilaka:hover{
+    transform: scale(1.06);
+}
+.flex2 .north{
+    background: url("Images/Rectangle\ 7.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 300px;
+    transition: all ease-in-out .6s;
+}
+.flex2 .north:hover{
+    transform: scale(1.06);
+}
+
+.flex2 .kasmir{
+    background: url("Images/Rectangle\ 9.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 300px;
+    transition: all ease-in-out .6s;
+}
+.flex2 .kasmir:hover{
+    transform: scale(1.06);
+}
+
+ .gridd .flex3{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+    color: var(--text-color);
+    grid-template-columns:400px auto;
+}
+
+.flex3 .bangla{
+    background: url("Images/Rectangle\ 9.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 300px;
+    transition: all ease-in-out .6s;
+}
+.flex3 .bangla:hover{
+    transform: scale(1.06);
+}
+
+.flex3 .bandar{
+    background: url("Images/Rectangle\ 10.png");
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 300px;
+    transition: all ease-in-out .6s;
+}
+.flex3 .bandar:hover{
+    transform: scale(1.06);
+}
+
+
+/* Choose us section */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+     justify-content: center;
+ }
+ .card h1{
+     font-size: 24px;
+     font-weight: 800;
+     padding: 20px 0;
+ }
+ .card p{
+     font-size: 12px;
+     font-weight: 400;
+     color: var(--p-color);
+ 
+ }
+ 
+ .card{
+     width: 48%;
+     height: 274px;
+     border-radius: 16px;
+     text-align: left;
+     padding: 40px;
+ 
+ }
+ 
+ /* deals section */
+ .deals{
+     text-align: center;
+    
+ }
+ 
+ .box{
+     width:80% ;
+     height: 450px;
+     margin: 40px auto;
+     border-radius: 16px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ 
+ }
+ .box div{
+     text-align:center;
+     padding:20px ;
+     width: 70%;
+     background: rgba(255, 255, 255, 0.526);
+     border: 1px solid red;
+     border-radius: 10px;
+ }
+ button {
+     color: var(--text-color);
+     font-size: 16px;
+     font-weight: 600;
+     background: var(--main-color);
+     border: none;
+     border-radius: 5px;
+     padding: 8px 20px;
+     transition: all ease-in-out .3s;
+ }
+ button:hover{
+     transform: scale(1.05);
+ }
+ .video-mout{
+     width: 50%;
+ }
+ 
+ video{
+     width: 100%;
+     background-size:cover;
+     border-radius: 10px;
+ }
+ 
+
